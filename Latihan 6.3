@@ -1,0 +1,23 @@
+jumlah_mk = int(input("Masukkan jumlah mata kuliah: "))
+
+total = 0
+
+for i in range(jumlah_mk):
+    nilai = input("Masukkan nilai mata kuliah (A/B/C/D): ")
+
+    if nilai == "A":
+        bobot = 4
+    elif nilai == "B":
+        bobot = 3
+    elif nilai == "C":
+        bobot = 2
+    elif nilai == "D":
+        bobot = 1
+    else:
+        bobot = 0
+
+    total = total + bobot
+
+ips = total / jumlah_mk
+
+print("IPS Anda adalah:", ips)
